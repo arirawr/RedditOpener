@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Reddit Opener",
+  "description": "Click a link on reddit to open the link in one tab, and the comments in another",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.reddit.com/*"],
+      "js": ["jquery.js", "myscript.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
