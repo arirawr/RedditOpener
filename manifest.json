@@ -2,8 +2,9 @@
   "manifest_version": 2,
 
   "name": "Reddit Opener",
-  "description": "Click a link on reddit to open the link in one tab, and the comments in another",
+  "description": "Click a link on reddit to open the link in one background tab, and the comments in another",
   "version": "1.0",
+  "author": "Ari Vaniderstine",
   "permissions": [
     "activeTab"
   ],
@@ -13,7 +14,7 @@
   "content_scripts": [
     {
       "matches": ["https://*.reddit.com/*"],
-      "js": ["jquery.js", "myscript.js"],
+      "js": ["jquery.js", "opener.js"],
       "run_at": "document_end"
     }
   ]
