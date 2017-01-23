@@ -5,6 +5,10 @@
   "description": "Click a link on reddit to open the link in one background tab, and the comments in another",
   "version": "1.0",
   "author": "Ari Vaniderstine",
+  "icons": {
+    "48": "48.png",
+    "128": "128.png"
+  },
   "permissions": [
     "activeTab"
   ],
